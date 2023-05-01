@@ -1,0 +1,203 @@
+
+
+
+*{  
+    margin: 0 auto;
+    text-align: center;
+   
+   
+}
+body{
+    
+    background: linear-gradient(90deg,#a7572a 0%, #256cb8 80%);
+}
+
+
+.task-item p{
+    margin-left: 5px;
+}
+.task-item{ 
+ 
+    height: 30px;
+    width: 30px;
+  
+   
+   
+}
+
+.checkbox .button{
+    display: flex;
+    padding: 10px;
+ 
+    
+}
+
+.button-64:active,
+.button-64:hover {
+  outline: 0;
+}
+
+.button-64 span {
+  background-color: rgb(5, 6, 45);
+  padding: 16px 24px;
+  border-radius: 6px;
+  width: 100%;
+  height: 100%;
+  transition: .3ms;
+
+}
+
+.button-64:hover span {
+  background: none;
+}
+
+@media (min-width: 768px) {
+  .button-64 {
+    font-size: 24px;
+    min-width: 196px;
+  }
+}
+
+.container h1{
+    padding-top: 22px;
+    padding-bottom: 19px;
+    padding-bottom: 10px;
+    color: rgb(241, 64, 0);
+    text-shadow: 7px 11px 21px rgba(0,0,0,0.64);
+}
+
+.task-box h2{
+    padding-bottom: 10px;
+    color: rgb(241, 64, 0);
+    text-shadow: 7px 11px 21px rgba(0,0,0,0.64);
+   
+}
+.container{
+    margin: auto;
+    padding: auto;
+    height: 400px;
+    width: 400px;
+    text-align:  center;
+   
+
+}
+.container .task-item{
+    display: flex;
+   justify-content: center;
+    align-items: center;
+   margin-bottom: 10px;
+}
+.new-task button{
+    height: 28px;
+    width: 28px;
+    border-radius: 5px;
+    border: solid 2px;
+    text-align: center;
+
+    border-style: solid;
+    border-width: 1px;
+    text-align: center;
+}
+
+.new-task input{  
+    height: 27px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    border-style: solid;
+    border-width: 1px;
+
+}
+.task-box button{
+    margin-left: 7px;
+    background-color: rgb(11, 151, 207);
+    border: 3px;
+    margin-right: 1rem;
+   
+}
+
+.task-box .task-item {
+    background-color: rgb(11, 151, 207);
+    border-radius: 10px;
+    margin-bottom:16px ;
+    width: 550px;
+    height: 70px;
+    display: flex ;
+    justify-content: space-between;
+   
+    
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, 
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, 
+    rgba(0, 0, 0, 0.12) 0px 4px 6px, 
+    rgba(0, 0, 0, 0.17) 0px 12px 13px,
+    rgba(0, 0, 0, 0.09) 0px -3px 5px;
+   
+
+    
+}
+.task-box .task-item input{
+    margin: 5px;
+    align-items: center;
+    text-align: center;
+ 
+    
+}
+
+
+.complete{
+    text-decoration: line-through;
+}
+
+input[type="checkbox"]{
+display: none;
+
+
+}
+.fake-checkbox {
+    width: 19px;
+    height: 19px;
+    border-radius: 3px ;
+    border: 3px solid rgb(241, 64, 0);
+    margin-left: 1rem;
+    
+}
+.fake-checkbox::after{
+    display: block;
+    content: "";
+ 
+}
+input:checked ~ .fake-checkbox::after{
+    width: 100%;
+    height: 100%;
+    background-color:rgb(241, 64, 0);
+    position: relative;
+    width: 20px;
+    height: 21px;
+    left: -1px;
+    top: -19px;
+    border-radius: 3px;
+    
+
+    
+}
+.fa-check{
+    position: relative;
+    top: 0px;
+    left: 1px;
+    z-index: 1;
+    color: rgb(11, 151, 207);
+}
+.fa-check:active{
+color: black;
+z-index: 1;
+transform: .1ms;
+}
+
+@media (min-width: 992px){
+    .conatiner{
+        width: 50%;
+        margin: 0 auto;
+    }
+};
+
+
+
